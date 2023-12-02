@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Courgette&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/icons/ball.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Random Game</title>
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <audio id="background-music" src="assets/audio/bg-music.mp3" autoplay loop></audio>
+    <audio id="hit" src="assets/audio/hit.mp3"></audio>
+    <audio id="miss" src="assets/audio/miss.mp3"></audio>
+    <audio id="start" src="assets/audio/start.mp3"></audio>
+    <audio id="end" src="assets/audio/end.mp3"></audio>
+    <div class="bg-image"></div>
+    <header>
+        <h1>Memory Goal</h1>
+    </header>
+    <main>
+        <div class="modal">
+            <p class="modal-content" id="countdown">00:03</p>
+        </div>
+        <div class="info">
+            <button class="start">Start Game</button>
+            <div id="medium-level">Level: easy</div>
+            <div id="time-display">Remaining time: 01:00</div>
+            <div id="raiting">Score: 0</div>
+        </div>
+        <div class="container">
+            <div class="ball-container">
+            </div>
+        </div>
+        <div class = "target-ball" id="target-ball" style="display: none;"></div>
+        <div class="table">
+            <table>
+                <p>10 best results</p>
+                <img src="assets/icons/down.png" class="down">
+                <img src="assets/icons/up.png" class="up">
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+              </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2023</p>
+            <p class="github-link"><img src="./assets/icons/github-icon.png" alt="icon" class="icons">
+                <a href="https://github.com/NickIvn">NickIvn</a></p>
+            <p><a href="https://rs.school/js-stage0/"><img src="assets/images/rss-logo.png" alt="RS School logo" class="rss-school"></a></p>
+            <p class="link-about">How to play</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
